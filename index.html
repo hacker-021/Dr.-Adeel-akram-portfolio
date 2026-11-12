@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engr. Prof. Dr. Adeel Akram · Vice Chancellor, PTUT Lahore</title>
+<meta name="description" content="Engr. Prof. Dr. Adeel Akram: Vice Chancellor of Punjab Tianjin University of Technology, Lahore; Professor of Telecommunication Engineering, UET Taxila. 103 publications, 1,413 citations, indigenous DPI Engine creator.">
+
+<!-- Premium Typography: Cormorant Garamond (Editorial Display Serif) + Plus Jakarta Sans (Crisp Body) + JetBrains Mono (Telemetry) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ---------------- SCROLLCRAFT ARCHIVAL DESIGN SYSTEM ---------------- */
+:root {
+  /* Surfaces & Ink */
+  --bg: #F8F6F0;
+  --bg2: #F1ECE2;
+  --ink: #0B1B33;
+  --tx: #24354D;
+  --mut: #52637A;
+  --line: #DFD7C5;
+  --line-strong: #CDC3AD;
+  --card: #FFFFFF;
+
+  /* Editorial Accents */
+  --gold: #B88E28;
+  --gold-dark: #8C6A14;
+  --teal: #0E7C7C;
+  --teal-dark: #095959;
+  --indigo: #3042B8;
+  --indigo-dark: #222F88;
+  --coral: #D44A24;
+  --coral-dark: #A63414;
+
+  --ac: var(--gold);
+  --act: var(--gold-dark);
+
+  /* Typography Ramp */
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Optical Measures & Easings */
+  --measure: 64ch;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-spring: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  background: transparent;
+  color: var(--tx);
+  font-family: var(--sans);
+  font-weight: 400;
+  line-height: 1.68;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Browser Surface Theming */
+::selection { background: var(--ac); color: #0B1B33; }
+:focus-visible {
+  outline: 2px solid var(--ac);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+:where(table, .cnt, .num, [data-num]) {
+  font-variant-numeric: tabular-nums;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ac);
+  transition: color 0.2s, border-color 0.2s;
+}
+a:hover {
+  color: var(--act);
+  border-color: var(--act);
+}
+
+/* Ambient Canvas & Tactile Surfaces */
+#gl {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+.vig {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 62%, rgba(11, 27, 51, 0.08) 100%);
+}
+.grain {
+  position: fixed;
+  inset: -50%;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.038;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* Scroll Progress Bar */
+#bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, var(--gold), var(--coral), var(--indigo), var(--teal));
+  box-shadow: 0 0 12px rgba(184, 142, 40, 0.45);
+  transition: width 0.08s ease-out;
+}
+
+/* Fixed HUD Header */
+header.hud {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 42px;
+  background: rgba(248, 246, 240, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(223, 215, 197, 0.85);
+  box-shadow: 0 4px 20px -8px rgba(11, 27, 51, 0.06);
+}
+.brand-group {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: 0.03em;
+  border: 0;
+  color: var(--ink);
+  line-height: 1.1;
+}
+.logo b { color: var(--gold); }
+.logo-sub {
+  font: 500 10px var(--mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mut);
+  margin-top: 2px;
+}
+.hud-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.chap {
+  font: 500 11px var(--mono);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.85);
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+.hud-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.btn-hud {
+  font: 500 11px var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 7px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  transition: all 0.2s var(--ease-out);
+}
+.btn-hud:hover {
+  background: var(--ink);
+  color: #FFFFFF;
+}
+
+/* Side Navigation Dots */
+nav.dots {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+nav.dots a {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--mut);
+  display: block;
+  position: relative;
+  transition: transform 0.25s, background-color 0.25s, border-color 0.25s;
+  background: transparent;
+}
+nav.dots a.on {
+  background: var(--ac);
+  border-color: var(--ac);
+  transform: scale(1.4);
+  box-shadow: 0 0 10px rgba(184, 142, 40, 0.5);
+}
+nav.dots a span {
+  position: absolute;
+  right: 24px;
+  top: -6px;
+  font: 500 10.5px var(--mono);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(8px);
+  transition: opacity 0.22s var(--ease-out), transform 0.22s var(--ease-out);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.98);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 18px rgba(11, 27, 51, 0.08);
+  pointer-events: none;
+}
+nav.dots a:hover span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+main { position: relative; z-index: 5; }
+section {
+  position: relative;
+  padding: 16vh 8vw;
+  min-height: 100vh;
+}
+
+/* Dynamic Section Accents */
+#hero { --ac: var(--gold); --act: var(--gold-dark); }
+#stats { --ac: var(--gold); --act: var(--gold-dark); }
+#education { --ac: var(--indigo); --act: var(--indigo-dark); }
+#career { --ac: var(--teal); --act: var(--teal-dark); }
+#leadership { --ac: var(--coral); --act: var(--coral-dark); }
+#research { --ac: var(--indigo); --act: var(--indigo-dark); }
+#supervision { --ac: var(--teal); --act: var(--teal-dark); }
+#teaching { --ac: var(--gold); --act: var(--gold-dark); }
+#industry { --ac: var(--coral); --act: var(--coral-dark); }
+#training { --ac: var(--indigo); --act: var(--indigo-dark); }
+#initiatives { --ac: var(--teal); --act: var(--teal-dark); }
+#contact { --ac: var(--gold); --act: var(--gold-dark); }
+
+.eyebrow {
+  font: 500 11px var(--mono);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--act);
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.eyebrow::before {
+  content: "";
+  width: 44px;
+  height: 2px;
+  background: var(--ac);
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--ink);
+  font-size: clamp(38px, 5.6vw, 80px);
+  line-height: 1.06;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  margin-bottom: 34px;
+}
+h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--act);
+}
+h3 {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+h4 {
+  font: 500 11px var(--mono);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--act);
+  margin: 48px 0 18px;
+}
+p.lead {
+  font-size: clamp(16px, 1.4vw, 20px);
+  max-width: var(--measure);
+  color: var(--tx);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+/* Architectural Cards (Taste Floor Refinement: No cartoonish 3px top borders) */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 4px 20px -4px rgba(11, 27, 51, 0.07), 0 1px 3px rgba(11, 27, 51, 0.04);
+  padding: 28px 30px;
+  border-radius: 4px;
+  position: relative;
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out), border-color 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--ac) 45%, var(--line));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 14px 34px -8px rgba(11, 27, 51, 0.12), 0 2px 6px rgba(11, 27, 51, 0.05);
+}
+
+.grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+.grid.g2 {
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+/* Fast, Anticipatory Reveal System */
+.rv {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  will-change: opacity, transform;
+}
+.rv.in {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.meta {
+  font: 400 12px var(--mono);
+  letter-spacing: 0.06em;
+  color: var(--mut);
+  margin-bottom: 6px;
+}
+.small {
+  font-size: 14.5px;
+  color: var(--tx);
+  line-height: 1.62;
+}
+ul.l {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+ul.l li {
+  padding: 9px 0 9px 22px;
+  border-bottom: 1px solid rgba(223, 215, 197, 0.6);
+  position: relative;
+  font-size: 14.5px;
+  color: var(--tx);
+  line-height: 1.55;
+}
+ul.l li:last-child { border-bottom: none; }
+ul.l li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 19px;
+  width: 8px;
+  height: 2px;
+  background: var(--ac);
+}
+ul.l li b {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tag {
+  display: inline-block;
+  font: 500 11px var(--mono);
+  letter-spacing: 0.1em;
+  border: 1px solid var(--line);
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin: 0 6px 8px 0;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 6px -2px rgba(11, 27, 51, 0.06);
+}
+
+/* ---------------- HERO SECTION (DIMENSIONAL LAYERED COMPOSITION) ---------------- */
+#hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 5vw;
+  padding-top: 16vh;
+}
+.title-pre {
+  font: 500 12px var(--mono);
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  color: var(--act);
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.title-pre span.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--ink);
+  font-size: clamp(54px, 8.4vw, 134px);
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+h1 span.name-block { display: block; }
+h1 span.i {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+  padding-left: 0.35em;
+}
+.roles {
+  margin-top: 36px;
+  display: grid;
+  gap: 16px;
+  max-width: 560px;
+}
+.roles div {
+  border-left: 3px solid var(--gold);
+  padding: 4px 0 4px 18px;
+  font-size: 15.5px;
+  color: var(--ink);
+  font-weight: 500;
+  line-height: 1.48;
+}
+.roles div:nth-child(2) { border-color: var(--teal); }
+.roles small {
+  display: block;
+  font: 500 11px var(--mono);
+  letter-spacing: 0.18em;
+  color: var(--mut);
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.cta {
+  display: flex;
+  gap: 14px;
+  margin-top: 38px;
+  flex-wrap: wrap;
+}
+.btn {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: #FFFFFF;
+  padding: 13px 26px;
+  font: 500 11px var(--mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 0.22s var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 3px;
+  box-shadow: 0 4px 14px -3px rgba(11, 27, 51, 0.25);
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #0B1B33;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -4px rgba(184, 142, 40, 0.4);
+}
+.btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+.btn.g {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ink);
+  border-color: var(--line-strong);
+  box-shadow: 0 2px 8px -2px rgba(11, 27, 51, 0.08);
+}
+.btn.g:hover {
+  background: #FFFFFF;
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+/* 3D Hero Portrait with Spatial Layering */
+.portrait {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 460px);
+  perspective: 1200px;
+}
+.portrait::before {
+  content: "";
+  position: absolute;
+  inset: -10% -12%;
+  background: radial-gradient(closest-side, rgba(184, 142, 40, 0.28), rgba(212, 74, 36, 0.08) 60%, transparent);
+  z-index: -1;
+  filter: blur(14px);
+}
+.portrait .frame {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border-radius: 8px;
+  background: #FFFFFF;
+  padding: 8px;
+  box-shadow: 0 26px 54px -22px rgba(11, 27, 51, 0.4), 0 4px 12px -2px rgba(11, 27, 51, 0.08);
+  border: 1px solid var(--line);
+}
+.portrait img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+.chip {
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 6px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 16px 32px -12px rgba(11, 27, 51, 0.25);
+  font: 500 10px var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mut);
+  transform: translateZ(68px);
+  pointer-events: none;
+}
+.chip b {
+  display: block;
+  font: 600 24px var(--serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-transform: none;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+.chip.c1 { left: -24px; bottom: 44px; border-left: 3px solid var(--gold); }
+.chip.c2 { right: -22px; top: 40px; border-left: 3px solid var(--teal); }
+.chip.c3 { right: -12px; bottom: -18px; border-left: 3px solid var(--coral); }
+
+/* Photographic Figures & Architectural Badges */
+figure.photo {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #FFFFFF;
+  box-shadow: 0 18px 40px -20px rgba(11, 27, 51, 0.28);
+}
+figure.photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+figure.photo:hover img {
+  transform: scale(1.025);
+}
+figure.photo figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 34px 20px 14px;
+  background: linear-gradient(transparent, rgba(11, 27, 51, 0.88));
+  color: #FFFFFF;
+  font: 400 11px var(--mono);
+  letter-spacing: 0.08em;
+}
+figure.photo figcaption b {
+  display: block;
+  font: 600 19px var(--serif);
+  letter-spacing: 0;
+  margin-bottom: 2px;
+}
+.bd {
+  display: inline-block;
+  font: 500 9px var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-right: 6px;
+  background: var(--gold);
+  color: #0B1B33;
+}
+.bd.il { background: var(--coral); color: #FFFFFF; }
+
+.feat { margin: 12px 0 44px; aspect-ratio: 21/9; }
+.row3 {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 28px 0;
+}
+.row3 figure.photo { aspect-ratio: 4/3; }
+.split {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 5vw;
+  align-items: center;
+}
+.split figure.photo { aspect-ratio: 4/3; }
+
+/* ---------------- CHAPTER 02: EXECUTIVE IMPACT LEDGER ---------------- */
+.stat-ledger {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px -16px rgba(11, 27, 51, 0.1);
+  margin-top: 30px;
+}
+.stat-tile {
+  background: #FFFFFF;
+  padding: 26px 24px;
+  transition: background 0.2s;
+}
+.stat-tile:hover {
+  background: #FAF8F4;
+}
+.stat-tile .n {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--ink);
+  font-size: clamp(42px, 4.4vw, 64px);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.stat-tile .t {
+  font: 500 11px var(--mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--act);
+  margin-top: 12px;
+}
+.stat-tile .d {
+  font-size: 13.5px;
+  color: var(--mut);
+  margin-top: 6px;
+  line-height: 1.45;
+}
+
+/* Timeline */
+.tl {
+  position: relative;
+  padding-left: 36px;
+  margin-top: 34px;
+}
+.tl::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(var(--teal), var(--gold) 50%, var(--coral));
+}
+.tl .it {
+  position: relative;
+  margin-bottom: 28px;
+}
+.tl .it::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 32px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 3px solid var(--ac);
+  box-shadow: 0 0 0 5px rgba(14, 124, 124, 0.15);
+}
+.tl .when {
+  font: 500 11px var(--mono);
+  letter-spacing: 0.2em;
+  color: var(--act);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.tl ul.l { margin-top: 10px; }
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5vw;
+}
+
+/* Details Accordion */
+details {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.98);
+  margin-top: 16px;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px -6px rgba(11, 27, 51, 0.08);
+  transition: border-color 0.22s, box-shadow 0.22s;
+}
+details[open] {
+  box-shadow: 0 10px 28px -10px rgba(11, 27, 51, 0.14);
+  border-color: var(--line-strong);
+}
+summary {
+  cursor: pointer;
+  padding: 18px 24px;
+  font: 500 12px var(--mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ink);
+}
+summary::-webkit-details-marker { display: none; }
+summary::after {
+  content: "+";
+  font-size: 18px;
+  color: var(--act);
+  font-weight: bold;
+}
+details[open] summary::after { content: "−"; }
+details .in2 { padding: 0 24px 20px; }
+
+.edu .yr {
+  font: 500 54px var(--serif);
+  color: var(--ac);
+  opacity: 0.6;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+/* ---------------- CHAPTER 06: LABORATORY DPI SPECTRUM ANALYZER (SIGNATURE MOVE) ---------------- */
+.dpi-synthesizer-card {
+  margin: 36px 0;
+  background: #061120;
+  border: 1px solid rgba(14, 124, 124, 0.45);
+  border-radius: 6px;
+  padding: 24px 28px;
+  box-shadow: 0 24px 60px -20px rgba(11, 27, 51, 0.45);
+  color: #FFFFFF;
+}
+.dpi-synth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.dpi-synth-title {
+  font: 500 11px var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.dpi-live-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: 500 10.5px var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #34D399;
+}
+.dpi-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #34D399;
+  box-shadow: 0 0 10px #34D399;
+  animation: pulse-dot 1.8s infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.75); }
+}
+
+/* Band Selector Tabs */
+.dpi-band-nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+.dpi-band-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #8FA2BC;
+  padding: 6px 14px;
+  font: 500 10px var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dpi-band-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+}
+.dpi-band-btn.active {
+  background: rgba(14, 124, 124, 0.25);
+  border-color: var(--teal);
+  color: #00E5FF;
+}
+
+#dpi-canvas {
+  width: 100%;
+  height: 220px;
+  display: block;
+  border-radius: 4px;
+  background: #030A14;
+  cursor: crosshair;
+}
+.dpi-telemetry-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dpi-metric { font-family: var(--mono); }
+.dpi-metric-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8FA2BC;
+}
+.dpi-metric-val {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gold);
+  margin-top: 3px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------- CHAPTER 12: INTERACTIVE EXECUTIVE DOSSIER ---------------- */
+.dossier-container {
+  margin: 40px 0 20px;
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 32px 36px;
+  box-shadow: 0 16px 40px -16px rgba(11, 27, 51, 0.1);
+}
+.dossier-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 16px;
+}
+.dossier-tab {
+  background: transparent;
+  border: 1px solid var(--line);
+  padding: 8px 16px;
+  font: 500 11px var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--tx);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dossier-tab:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.dossier-tab.active {
+  background: var(--ink);
+  color: #FFFFFF;
+  border-color: var(--ink);
+}
+.dossier-body {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3vw;
+  align-items: center;
+}
+.dossier-info h4 {
+  margin: 0 0 10px 0;
+  color: var(--act);
+}
+.dossier-info h3 {
+  font-family: var(--serif);
+  font-size: 26px;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.dossier-specs {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.dossier-specs div {
+  padding-left: 16px;
+  border-left: 2px solid var(--gold);
+}
+.dossier-action-box {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  padding: 24px;
+  border-radius: 4px;
+  text-align: center;
+}
+.dossier-action-box p {
+  font-size: 13.5px;
+  color: var(--mut);
+  margin-bottom: 18px;
+}
+
+.contact-big a {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(28px, 4.4vw, 64px);
+  border: 0;
+  display: block;
+  line-height: 1.2;
+  word-break: break-all;
+  color: var(--ink);
+  transition: color 0.25s;
+}
+.contact-big a:hover { color: var(--act); }
+
+/* Colophon & Credits */
+.credits {
+  position: relative;
+  z-index: 5;
+  padding: 34px 8vw;
+  background: #0B1B33;
+  color: #C3CFDE;
+  font: 400 11px/1.9 var(--mono);
+  letter-spacing: 0.06em;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.credits a { color: #FFFFFF; border-color: var(--gold); }
+.credits h5 {
+  font: 500 11px var(--mono);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+footer {
+  position: relative;
+  z-index: 5;
+  padding: 26px 8vw;
+  background: #071324;
+  font: 400 11px var(--mono);
+  letter-spacing: 0.15em;
+  color: #8899AF;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  #hero, .split, .two, .dossier-body { grid-template-columns: 1fr; }
+  #hero { padding-top: 14vh; gap: 24px; }
+  .portrait { order: -1; width: min(85%, 340px); margin-bottom: 24px; }
+  header.hud { padding: 14px 20px; }
+  .chap { display: none; }
+  nav.dots { display: none; }
+  section { padding: 12vh 6vw; }
+  .chip { transform: none; padding: 8px 12px; }
+  .chip b { font-size: 19px; }
+  .chip.c1 { position: static; display: inline-block; margin: 10px 6px 0 0; }
+  .chip.c2 { position: static; display: inline-block; margin: 10px 6px 0 0; }
+  .chip.c3 { display: none; }
+  .feat { aspect-ratio: 16/10; }
+  .stat-ledger { grid-template-columns: 1fr 1fr; }
+  .dpi-telemetry-row { grid-template-columns: 1fr 1fr; gap: 12px; }
+}
+@media (max-width: 540px) {
+  .stat-ledger { grid-template-columns: 1fr; }
+  .dpi-telemetry-row { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rv { transform: none !important; opacity: 1 !important; transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+<div id="bar"></div>
+<canvas id="gl"></canvas>
+<div class="vig"></div>
+<div class="grain"></div>
+
+<!-- Top HUD Bar -->
+<header class="hud">
+  <div class="brand-group">
+    <a class="logo" href="#hero">Prof. Dr. Adeel Akram<b>.</b></a>
+    <span class="logo-sub">Vice Chancellor · Scholar · Engineer</span>
+  </div>
+  <div class="hud-center">
+    <div class="chap" id="chap">01 · Prologue</div>
+  </div>
+  <div class="hud-actions">
+    <a class="btn-hud" href="#dossier">Dossier</a>
+    <a class="btn-hud" href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- Right Side Navigation Dots -->
+<nav class="dots" id="dots"></nav>
+
+<main>
+
+<!-- ---------------- CHAPTER 01: PROLOGUE ---------------- -->
+<section id="hero" data-n="Prologue">
+  <div>
+    <div class="title-pre rv"><span class="dot"></span> Engr. · Prof. · Dr. · PEC Verified</div>
+    <h1 class="rv">
+      <span class="name-block">Adeel</span>
+      <span class="name-block i">Akram</span>
+    </h1>
+    <div class="roles rv">
+      <div>
+        <small>Vice Chancellor · Jan 2026 – Present</small>
+        Punjab Tianjin University of Technology (PTUT), Lahore
+      </div>
+      <div>
+        <small>Tenured Professor · since 2008 · Ex-Dean (3 Terms)</small>
+        Faculty of Telecommunication &amp; Information Engineering, UET Taxila
+      </div>
+    </div>
+    <div class="cta rv">
+      <a class="btn" href="#research">Explore Sovereign DPI Engine &nearr;</a>
+      <a class="btn g" href="#dossier">Executive Dossier</a>
+      <a class="btn g" href="#contact">Direct Contact</a>
+    </div>
+  </div>
+
+  <div class="portrait rv">
+    <div class="frame" id="frame">
+      <img alt="Portrait of Prof. Dr. Adeel Akram" src="assets/hero.jpg">
+      <div class="chip c1"><b>30+ yrs</b>Academia &amp; Industry</div>
+      <div class="chip c2"><b>1,413</b>Google Scholar Citations</div>
+      <div class="chip c3"><b>103</b>Refereed Publications</div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------- CHAPTER 02: IMPACT IN NUMBERS ---------------- -->
+<section id="stats" data-n="Impact">
+  <div class="eyebrow rv">02 · Impact in Numbers</div>
+  <h2 class="rv">A career measured in <em>signal &amp; substance.</em></h2>
+  <div class="split" style="margin-bottom:44px">
+    <p class="lead rv">Telecommunications, computer networks and security researcher; academic leader; founder of state-funded research centers, software systems, and national technology infrastructure. All citation metrics recorded per Google Scholar (2025).</p>
+    <figure class="photo rv">
+      <img alt="Research analytics dashboard" src="assets/charts.jpg">
+      <figcaption><span class="bd il">Illustration</span><b>Research footprint</b>Citations, publication indices and national collaboration</figcaption>
+    </figure>
+  </div>
+
+  <!-- Executive Research Ledger -->
+  <div class="stat-ledger rv" id="statledger"></div>
+
+  <div style="margin-top:32px" class="rv">
+    <a class="btn g" href="https://scholar.google.com/citations?user=G2mBXScAAAAJ" target="_blank" rel="noopener">Verified Google Scholar Profile &nearr;</a>
+  </div>
+</section>
+
+<!-- ---------------- CHAPTER 03: EDUCATION ---------------- -->
+<section id="education" data-n="Education">
+  <div class="eyebrow rv">03 · Education</div>
+  <h2 class="rv">Foundations in <em>electrical</em> &amp; computer engineering.</h2>
+  <div class="grid g2 edu" id="edugrid"></div>
+  <figure class="photo feat rv" style="margin-top:40px">
+    <img alt="Main gate of UET Taxila" src="assets/gate.jpg" style="object-position:50% 38%">
+    <figcaption><span class="bd">Photo</span><b>University of Engineering &amp; Technology, Taxila</b>Where he completed his Ph.D. (2007) and has served since 2002</figcaption>
+  </figure>
+</section>
+
+<!-- ---------------- CHAPTER 04: APPOINTMENTS & CAREER ---------------- -->
+<section id="career" data-n="Career">
+  <div class="eyebrow rv">04 · Appointments &amp; Tenures</div>
+  <h2 class="rv">Three decades, <em>one continuous trajectory.</em></h2>
+  <div class="split" style="margin-bottom:30px">
+    <p class="lead rv">From private network architecture at Expert Systems to a university professorship, three consecutive elected terms as Dean at UET Taxila, and now appointment as Vice Chancellor of Punjab Tianjin University of Technology, Lahore.</p>
+    <figure class="photo rv">
+      <img alt="Punjab Tianjin University of Technology" src="assets/ptut.jpg">
+      <figcaption><span class="bd il">Illustration</span><b>Punjab Tianjin University of Technology</b>Lahore · Vice Chancellor, Jan 2026 – Present</figcaption>
+    </figure>
+  </div>
+  <div class="tl" id="timeline"></div>
+  <h4 class="rv">UET Taxila · Where the academic career unfolded</h4>
+  <div class="row3">
+    <figure class="photo rv">
+      <img alt="UET Taxila library" src="assets/library.jpg">
+      <figcaption><span class="bd">Photo</span><b>Central Library</b>UET Taxila</figcaption>
+    </figure>
+    <figure class="photo rv">
+      <img alt="Electrical Engineering Department, UET Taxila" src="assets/electrical.jpg">
+      <figcaption><span class="bd">Photo</span><b>Electrical Engineering</b>UET Taxila</figcaption>
+    </figure>
+    <figure class="photo rv">
+      <img alt="Software and Computer Engineering Department, UET Taxila" src="assets/software.jpg">
+      <figcaption><span class="bd">Photo</span><b>Software &amp; Computer Engineering</b>UET Taxila</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ---------------- CHAPTER 05: LEADERSHIP & ASSIGNMENTS ---------------- -->
+<section id="leadership" data-n="Leadership">
+  <div class="eyebrow rv">05 · University Leadership</div>
+  <h2 class="rv">Dean, chairman, director, <em>focal person.</em></h2>
+  <div class="two" id="leadgrid"></div>
+</section>
+
+<!-- ---------------- CHAPTER 06: RESEARCH & DPI ENGINE (THE PEAK) ---------------- -->
+<section id="research" data-n="Research">
+  <div class="eyebrow rv">06 · Research, Grants &amp; Sovereign Tech</div>
+  <h2 class="rv">Funded laboratories and <em>indigenous defense.</em></h2>
+  <div class="split" style="margin-bottom:40px">
+    <p class="lead rv">Primary research focus: wireless and mobile communication systems, cognitive radio networks, IoT mesh architectures, SDN cloud task migration, deep packet inspection, and antenna design. Ph.D. Dissertation: <i>Dynamic Task Scheduling and Routing Algorithms for Heterogeneous Mobile Ad-hoc Computing Clusters</i>.</p>
+    <figure class="photo rv">
+      <img alt="Network security research lab" src="assets/dpi.jpg">
+      <figcaption><span class="bd il">Illustration</span><b>Deep Packet Inspection Lab</b>Rs. 77.23 Million national research grant</figcaption>
+    </figure>
+  </div>
+  <div class="grid" id="grantgrid"></div>
+
+  <!-- Signature Move: Interactive Laboratory DPI Spectrum & Protocol Analyzer -->
+  <div class="dpi-synthesizer-card rv">
+    <div class="dpi-synth-header">
+      <div class="dpi-synth-title">DPI-Engine Telemetry Synthesizer // Indigenous Sovereign Hardware</div>
+      <div class="dpi-live-badge"><span class="dpi-dot"></span> Line-Rate Active (Zero-Loss Pipeline)</div>
+    </div>
+
+    <!-- RF Band Selector Tabs -->
+    <div class="dpi-band-nav" id="band-nav">
+      <button class="dpi-band-btn" data-band="0">800 MHz LTE / Sub-1GHz</button>
+      <button class="dpi-band-btn" data-band="1">2.4 GHz ISM / WiFi-6</button>
+      <button class="dpi-band-btn active" data-band="2">5.8 GHz Carrier / C-Band</button>
+      <button class="dpi-band-btn" data-band="3">28 GHz mmWave / 5G-6G</button>
+    </div>
+
+    <canvas id="dpi-canvas" width="840" height="220"></canvas>
+
+    <div class="dpi-telemetry-row">
+      <div class="dpi-metric">
+        <div class="dpi-metric-label">Throughput Rate</div>
+        <div class="dpi-metric-val" id="synth-tp">78.4 Gbps</div>
+      </div>
+      <div class="dpi-metric">
+        <div class="dpi-metric-label">L7 Inspection Protocol</div>
+        <div class="dpi-metric-val" id="synth-filter">TLS 1.3 State Tracking</div>
+      </div>
+      <div class="dpi-metric">
+        <div class="dpi-metric-label">Processing Latency</div>
+        <div class="dpi-metric-val" id="synth-lat">1.18 µs</div>
+      </div>
+      <div class="dpi-metric">
+        <div class="dpi-metric-label">RF Carrier Band</div>
+        <div class="dpi-metric-val" id="synth-band">5.8 GHz Carrier</div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="rv">Commercialization &amp; Sovereign Defense</h4>
+  <div class="card rv">
+    <h3>Indigenous Multi-Gigabit High-Speed DPI Engine</h3>
+    <p class="small" style="margin-top:10px">Developed at the Deep Packet Inspection Lab at UET Taxila as Pakistan's sovereign replacement for foreign Sandvine hardware, providing high-throughput line-rate network inspection and cybersecurity enforcement. <a href="https://web.uettaxila.edu.pk/dpilab/" target="_blank" rel="noopener">Official DPI Lab Portal &nearr;</a></p>
+  </div>
+  <figure class="photo feat rv" style="margin-top:40px">
+    <img alt="5G and IoT network visual" src="assets/net.jpg">
+    <figcaption><span class="bd il">Illustration</span><b>5G · IoT · 6G</b>Huawei HCIA 5G &amp; IoT certified · Lead R&amp;D for InoMesh 6G smart device patent</figcaption>
+  </figure>
+</section>
+
+<!-- ---------------- CHAPTER 07: MENTORSHIP & SUPERVISION ---------------- -->
+<section id="supervision" data-n="Supervision">
+  <div class="eyebrow rv">07 · Mentorship &amp; Lineage</div>
+  <h2 class="rv">Supervising the <em>next generation of scholars.</em></h2>
+  <figure class="photo feat rv">
+    <img alt="Professor mentoring PhD scholars" src="assets/teach.jpg" style="object-position:50% 35%">
+    <figcaption><span class="bd il">Illustration</span><b>8 PhDs completed · 2 in progress</b>Plus 33 Master's theses supervised in Pakistan and abroad</figcaption>
+  </figure>
+  <div class="grid" id="supstats"></div>
+  <div id="suplists"></div>
+</section>
+
+<!-- ---------------- CHAPTER 08: TEACHING ---------------- -->
+<section id="teaching" data-n="Teaching">
+  <div class="eyebrow rv">08 · Teaching &amp; Curriculum</div>
+  <h2 class="rv">Graduate and undergraduate <em>curricula.</em></h2>
+  <div class="two" id="teachgrid"></div>
+</section>
+
+<!-- ---------------- CHAPTER 09: INDUSTRY ---------------- -->
+<section id="industry" data-n="Industry">
+  <div class="eyebrow rv">09 · Industry · Expert Systems (1995 – 2002)</div>
+  <h2 class="rv">Where the engineering <em>began.</em></h2>
+  <p class="lead rv" style="margin-bottom:40px">Network Manager / Project Manager / System Integration Engineer, Aug 1995 – Aug 2002. Seven years in enterprise telecom, NADRA national identity cards, and mobile handheld computing systems.</p>
+  <div class="grid" id="indgrid"></div>
+</section>
+
+<!-- ---------------- CHAPTER 10: TRAININGS & CERTIFICATIONS ---------------- -->
+<section id="training" data-n="Training">
+  <div class="eyebrow rv">10 · Global Delegations &amp; Certifications</div>
+  <h2 class="rv">International technical <em>certifications.</em></h2>
+  <div class="grid" id="traingrid"></div>
+  <h4 class="rv">HEC-sponsored national &amp; international leadership workshops</h4>
+  <div class="grid" id="wsgrid"></div>
+</section>
+
+<!-- ---------------- CHAPTER 11: AWARDS & INITIATIVES ---------------- -->
+<section id="initiatives" data-n="Initiatives">
+  <div class="eyebrow rv">11 · Awards, Collaborations &amp; Mobility</div>
+  <h2 class="rv">Honours, partnerships and <em>things built.</em></h2>
+  <h4 class="rv">National Awards &amp; Strategic Committees</h4>
+  <div class="grid" id="awardgrid"></div>
+  <h4 class="rv">Industry Collaborations</h4>
+  <div class="grid" id="collabgrid"></div>
+  <h4 class="rv">Mobility &amp; Cloud Platforms</h4>
+  <div class="row3">
+    <figure class="photo rv">
+      <img alt="Electric rickshaw" src="assets/rick.jpg">
+      <figcaption><span class="bd il">Illustration</span><b>Fusion Rickshaw</b>Electric vehicle for mass transport · PTUT with Pak Star Automobile</figcaption>
+    </figure>
+    <figure class="photo rv">
+      <img alt="Hybrid electric motorcycle" src="assets/bike.jpg">
+      <figcaption><span class="bd il">Illustration</span><b>Hybrid electric motorcycle</b>PTUT · Pak China Huazi Green Energy</figcaption>
+    </figure>
+    <figure class="photo rv">
+      <img alt="ERP at cloud" src="assets/erp.jpg">
+      <figcaption><span class="bd il">Illustration</span><b>ERP@CLOUD</b>Serving public-sector universities</figcaption>
+    </figure>
+  </div>
+  <h4 class="rv">Software Platforms, Open Source &amp; Systems</h4>
+  <div class="grid" id="initgrid"></div>
+</section>
+
+<!-- ---------------- CHAPTER 12: EXECUTIVE DOSSIER & CONTACT ---------------- -->
+<section id="contact" data-n="Contact">
+  <div class="eyebrow rv">12 · Institutional Channels &amp; Dossier</div>
+  <figure class="photo feat rv">
+    <img alt="Prof. Dr. Adeel Akram in a university atrium" src="assets/contact.jpg" style="object-position:70% 40%">
+    <figcaption><span class="bd il">Illustration</span><b>Let's build what connects us next.</b>Academic and technological partnerships</figcaption>
+  </figure>
+
+  <!-- Interactive Executive Collaboration Dossier (Visitor Agency) -->
+  <div class="dossier-container rv" id="dossier">
+    <h4 style="margin:0 0 16px 0">Executive Collaboration &amp; Research Dossier</h4>
+    <div class="dossier-tabs" id="dossier-tabs">
+      <button class="dossier-tab active" data-type="0">Doctoral &amp; Graduate Supervision</button>
+      <button class="dossier-tab" data-type="1">Sovereign Telecom &amp; DPI R&amp;D</button>
+      <button class="dossier-tab" data-type="2">EV Mobility &amp; Green Energy</button>
+      <button class="dossier-tab" data-type="3">University Administration &amp; Governance</button>
+    </div>
+    <div class="dossier-body">
+      <div class="dossier-info">
+        <h4 id="dos-cat">Academic Inquiry</h4>
+        <h3 id="dos-title">Doctoral &amp; Master's Research Supervision</h3>
+        <p class="small" id="dos-desc">Open for research scholars proposing dissertations in 6G wireless architectures, deep packet inspection heuristics, emergency IoT networks, or cognitive radio optimization.</p>
+        <div class="dossier-specs" id="dos-specs">
+          <div><b>Primary Office:</b> Department of Telecommunication Engineering, UET Taxila</div>
+          <div><b>Required Documentation:</b> Research proposal (max 4 pages), academic CV, verified transcript copies</div>
+          <div><b>Average Review Interval:</b> 7 to 10 working days</div>
+        </div>
+      </div>
+      <div class="dossier-action-box">
+        <p>Send an inquiry directly routed to Dr. Adeel Akram's office with pre-formatted institutional headers.</p>
+        <a class="btn" id="dos-btn" href="mailto:adeel.akram@uettaxila.edu.pk?subject=[PhD%20Research%20Proposal]%20Dr.%20Adeel%20Akram&body=Dear%20Dr.%20Adeel%20Akram,%0D%0A%0D%0AI%20am%20writing%20to%20formally%20inquire%20regarding%20research%20supervision%20under%20your%20guidance.%0D%0A%0D%0AProposed%20Research%20Area:%20%0D%0AInstitutional%20Background:%20%0D%0ACV%20Summary:%20%0D%0A%0D%0ARespectfully,%0D%0A">Draft Executive Email &nearr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-big rv" style="margin-top:36px">
+    <a href="mailto:adeel.akram@uettaxila.edu.pk">adeel.akram@uettaxila.edu.pk</a>
+    <a href="tel:+923335727729">+92 333 572 7729</a>
+  </div>
+  <div style="margin-top:34px" class="rv">
+    <span class="tag">Vice Chancellor · PTUT Lahore</span>
+    <span class="tag">Tenured Professor · UET Taxila, Pakistan</span>
+    <span class="tag">PEC Registered Professional Engineer</span>
+  </div>
+  <div style="margin-top:20px" class="rv" id="links"></div>
+</section>
+
+</main>
+
+<div class="credits">
+  <h5>Archival Image Credits</h5>
+  Photographs of UET Taxila campus from Wikimedia Commons, licensed CC BY-SA:<br>
+  <a href="https://commons.wikimedia.org/wiki/File:UET_Taxila_Gate000.jpg" target="_blank" rel="noopener">Campus Main Gate</a> · TalhaDiscuss c (CC BY-SA 3.0);
+  <a href="https://commons.wikimedia.org/wiki/File:Uet_Taxila_Library.jpg" target="_blank" rel="noopener">Central Library</a> · TalhaDiscuss c (CC BY-SA 3.0);
+  <a href="https://commons.wikimedia.org/wiki/File:Electrical_Engineering_Depratment,_UET_Taxila.jpg" target="_blank" rel="noopener">Electrical Engineering Dept.</a> · Asadwarraich (CC BY-SA 4.0);
+  <a href="https://commons.wikimedia.org/wiki/File:Software_and_Computer_Engineering_Department,_UET_Taxila.jpg" target="_blank" rel="noopener">Software &amp; Computer Engineering Dept.</a> · Asadwarraich (CC BY-SA 4.0).<br>
+  Images designated "Illustration" are stylistic editorial renderings of laboratory concepts, vehicles and university facilities.
+</div>
+
+<footer>
+  <span>&copy; 2026 Prof. Dr. Adeel Akram · All Rights Reserved</span>
+  <span>Vice Chancellor, PTUT Lahore · Professor, UET Taxila</span>
+</footer>
+
+<!-- ---------------- SCRIPTS & DATA POPULATION ---------------- -->
+<script>
+var $ = function(id) { return document.getElementById(id.replace('#', '')); };
+var li = function(a) { return '<ul class="l">' + a.map(function(x) { return '<li>' + x + '</li>'; }).join('') + '</ul>'; };
+var card = function(t, m, body) { return '<div class="card rv"><h3>' + t + '</h3>' + (m ? '<div class="meta">' + m + '</div>' : '') + (body || '') + '</div>'; };
+
+// 1. Executive Impact Ledger Population
+var ledgerStats = [
+  ['1,413', 'Total Citations', 'Google Scholar Citations (1,074 in last 5 yrs)'],
+  ['103', 'Refereed Publications', '53 international journal · 50 conference papers'],
+  ['101.126', 'Cumulative Impact Factor', 'Thomson Reuters / Clarivate Web of Science'],
+  ['126.861', 'Rs. Million Grants', '3 funded national technology programs'],
+  ['30+', 'Years Experience', 'Continuous industry and academia since 1995'],
+  ['41', 'Theses Supervised', '8 PhD · 3 abroad (New Zealand) · 30 in Pakistan'],
+  ['3', 'Terms as Dean', 'Faculty of Telecom & Information Engg., UET Taxila'],
+  ['4', 'University Campuses', 'UET Taxila, UoC, PTUT Lahore, Pak-China EV JV']
+];
+$('#statledger').innerHTML = ledgerStats.map(function(s) {
+  var numVal = parseFloat(s[0].replace('+', ''));
+  return '<div class="stat-tile"><div class="n"><span class="cnt" data-v="' + numVal + '">0</span>' + (s[0].indexOf('+') !== -1 ? '+' : '') + '</div><div class="t">' + s[1] + '</div><div class="d">' + s[2] + '</div></div>';
+}).join('');
+
+// 2. Education Grid Population
+$('#edugrid').innerHTML = [
+  ['07/2007', 'Ph.D. Electrical Engineering', 'UET Taxila, Pakistan', '<p class="small" style="margin-top:12px">Dissertation: <i>Dynamic Task Scheduling and Routing Algorithms for Heterogeneous Mobile Ad-hoc Computing Clusters.</i><br>Cumulative 103 publications including 53 journal and 50 conference publications.</p>'],
+  ['03/2000', 'M.Sc. Computer Engineering', 'NUST, College of E&ME, Rawalpindi, Pakistan', '<p class="small" style="margin-top:12px">Thesis: <i>LAN Designer; Development of Network Design and Simulation Software Tool.</i></p>'],
+  ['11/1995', 'B.Sc. Electrical Engineering', 'UET Lahore, College of E&ME, Rawalpindi, Pakistan', '<p class="small" style="margin-top:12px">Graduation Project: <i>Implementation of PC based High Frequency Digital Storage Oscilloscope.</i></p>']
+].map(function(e) {
+  return '<div class="card rv"><div class="yr">' + e[0] + '</div><h3>' + e[1] + '</h3><div class="meta">' + e[2] + '</div>' + e[3] + '</div>';
+}).join('');
+
+// 3. Timeline Population
+var tl = [
+  ['Jan 2026 – Present', 'Vice Chancellor', 'Punjab Tianjin University of Technology (PTUT), Lahore', null],
+  ['Apr 2022 – Feb 2025', 'Professor, Electrical Engineering Technology (Deputation)', 'PTUT Lahore · joined 18 Apr 2022', [
+    '<b>Pro-Vice Chancellor</b> · May 2022 – Aug 2023',
+    '<b>Dean</b>, Faculty of Electrical, Auto and Mechanical · Dec 2022 – Feb 2025',
+    '<b>Director Academics</b> · Apr 2022 – Feb 2025',
+    '<b>Chairman</b>, Electrical Engineering Technology · Apr 2022 – Feb 2025'
+  ]],
+  ['Apr 2008 – Present', 'Professor, Telecommunication Engineering', 'UET Taxila · joined 13 Aug 2002', [
+    '<b>Dean</b> (3 consecutive tenures), Faculty of Telecommunication & Information Engineering · Nov 2009 – Apr 2021',
+    '<b>Dean</b>, Faculty of Electrical & Electronics Engineering · Aug 2019 – Apr 2020',
+    '<b>Dean</b>, Civil & Environmental Engineering · Apr 2019 – Apr 2020',
+    '<b>Dean</b>, Faculty of Electronics (Chakwal Sub-Campus) · Feb 2020 – Apr 2020',
+    '<b>Chairman</b>, Computer Science Department · Feb 2014 – Mar 2015',
+    '<b>Chairman</b>, Telecommunication Engineering · Oct 2012 – Mar 2015',
+    '<b>Chairman</b>, Telecommunication Engineering · Oct 2007 – Oct 2010'
+  ]],
+  ['Sep 2007 – Feb 2008', 'Associate Professor, Telecommunication Engineering', 'UET Taxila', null],
+  ['Aug 2002 – Sep 2007', 'Assistant Professor, Electrical Engineering', 'UET Taxila', null],
+  ['Aug 1995 – Aug 2002', 'Network Manager / Project Manager / System Integration Engineer', 'Expert Systems (Pvt) Ltd.', null]
+];
+$('#timeline').innerHTML = tl.map(function(t) {
+  return '<div class="it rv"><div class="card"><div class="when">' + t[0] + '</div><h3>' + t[1] + '</h3><div class="meta">' + t[2] + '</div>' + (t[3] ? li(t[3]) : '') + '</div></div>';
+}).join('');
+
+// 4. Leadership Population
+$('#leadgrid').innerHTML =
+  '<div class="card rv"><h3>Administrative Chairmanships · UET Taxila</h3>' + li([
+    '<b>Chairman</b> Computer Science Department · Jun 2019 – Jun 2020',
+    '<b>Chairman</b> Environmental Engg. Department · Apr 2019 – Apr 2020',
+    '<b>Chairman</b> Affiliation Committee · Aug 2021 – Apr 2022',
+    '<b>Chairman</b> Works Committee · Oct 2020 – Apr 2022',
+    '<b>Chairman</b> Security & Surveillance Committee · May 2012 – Apr 2022',
+    '<b>Chairman</b> Co-Curriculum and Industrial Tours Activities · Nov 2017 – Apr 2022',
+    '<b>Chairman</b> Central Purchase Committee · Jul 2012 – Jan 2015',
+    '<b>Chairman</b> Sports Committee · Dec 2018 – Dec 2021'
+  ]) + '</div>' +
+  '<div class="card rv"><h3>Directorships & National Roles</h3>' + li([
+    '<b>Director</b> International Linkages · Jan 2015 – Apr 2022',
+    '<b>Director</b> Network Administration and Research Center · Jun 2008 – Jun 2016',
+    '<b>Focal Person</b> PITB’s National Incubation Centres · Nov 2020 – Apr 2022',
+    '<b>Focal Person</b> ERP@CLOUD Software implementation · Apr 2020 – Present',
+    '<b>Focal Person</b> PITB’s e-Rozgaar Program · Dec 2018 – Present',
+    '<b>Cisco Certified Academic Instructor</b> (UET Taxila Cisco Academy) · Jul 2008 – Present',
+    '<b>Legal Main Contact</b>, Cisco Academy UET Taxila · Jul 2008 – Present',
+    '<b>Huawei Certified Academic Instructor</b> (5G and IoT) · Apr 2020 – Aug 2023'
+  ]) + '</div>';
+
+// 5. Research Grants Population
+$('#grantgrid').innerHTML = [
+  ['Deep Packet Inspection Lab', 'Rs. 77.23 Million', 'Indigenous Sovereign DPI Hardware & Filtering'],
+  ['Technology Development Fund', 'Rs. 8.381 Million', 'National Applied Telecom Research'],
+  ['Skills Development in Micro/Nanoelectronics', 'Rs. 41.25 Million', 'National IC Design Training in Universities']
+].map(function(g, i) {
+  return card('0' + (i + 1) + ' · ' + g[0], g[2], '<div class="stat"><div class="n" style="margin-top:16px;font-size:38px;color:var(--indigo)">' + g[1] + '</div></div>');
+}).join('') +
+card('Total Competitive Research Grants', '3 major funded national initiatives', '<div class="stat"><div class="n" style="margin-top:16px;font-size:38px;color:var(--gold)">Rs. 126.861 M</div></div>');
+
+// 6. Supervision Stats Population
+$('#supstats').innerHTML = [
+  ['8', 'PhD theses completed', 'during Professorship, UET Taxila'],
+  ['2', 'PhD scholars in progress', 'post-disaster IoT & frequency estimation'],
+  ['3', 'Master’s abroad', 'Whitecliffe · Master of IT, New Zealand'],
+  ['30', 'Master’s theses, Pakistan', 'completed during Professorship'],
+  ['8', 'Undergraduate projects', 'during Professorship'],
+  ['18', 'FYPs & Master’s theses', 'during Assistant Professorship']
+].map(function(s) {
+  return '<div class="card stat rv"><div class="n" style="font-size:48px">' + s[0] + '</div><div class="t" style="margin-top:10px">' + s[1] + '</div><div class="d">' + s[2] + '</div></div>';
+}).join('');
+
+// Supervision Expandable Lists
+var det = function(t, body, open) {
+  return '<details class="rv"' + (open ? ' open' : '') + '><summary>' + t + '</summary><div class="in2">' + body + '</div></details>';
+};
+$('#suplists').innerHTML =
+  det('PhD Theses Supervised — Completed [8]', li([
+    'An intelligent approach for Media Independent Handover (MIH) in Heterogeneous Wireless Networks — <b>Dr. Syed Sohail Ahmed</b>',
+    'Optimization of Network Infrastructure for Wireless Mesh Networks — <b>Dr. Shahbaz Pervez</b>',
+    'Network Management System for Heterogeneous Environment — <b>Dr. Zeshan Iqbal</b>',
+    'Ubiquitous Video Service Delivery in Collaborative Wireless Environment — <b>Dr. Samana Zehra</b>',
+    'A performance Optimized Communication Framework for Ubiquitous computing (Internet of Things Infrastructure Model) — <b>Dr. Ghulam Shabbir</b>',
+    'Task Migration in MCC using SDN — <b>Dr. Sikandar Khan</b>',
+    'Engineering the Security Requirements for Manufacturing Information System — <b>Dr. Saima Zareen</b>',
+    'Implantable Antennas for Medical Applications — <b>Dr. Muhammad Yousaf Alamgir</b>'
+  ]), true) +
+  det('PhD Scholars Currently Under Supervision [2]', li([
+    'Establishment of Emergency Communication Network Through Internet of Things Infrastructure in Post-Disaster Situation — <b>Engr. Wajeeh Anwar</b> (Ex-Executive Vice President, PTCL)',
+    'Multi-component instantaneous frequency estimation techniques — <b>Engr. Jamal Akram</b> (Assistant Professor, Federal Urdu University, Islamabad)'
+  ])) +
+  det('Master’s Theses Supervised Abroad — Whitecliffe, New Zealand [3]', li([
+    'Peer-to-Peer Secure Communication Systems Using Wireless Ad Hoc Networking for Disaster or War-like Situations — <b>Hanan Almoghrabi</b>',
+    'A Novel Multi-Layered Security Solution for Cloud, Fog, and Edge Infrastructures Using OpenMetal/OpenStack and Cloudflare — <b>Max Alhourani</b>',
+    'AI Weaponization in Cybersecurity – Offensive & Defensive Strategies — <b>Muazma Shahbaz</b>'
+  ])) +
+  det('Master’s Theses Supervised in Pakistan — Completed [30]', li([
+    'QoS Enhancement in Multimedia Transmission in Hybrid Wireless Networks',
+    'FLocARe - Fault Localization and Rectification Software',
+    'Anomaly Based Intrusion Detection for Wireless Ad hoc Networks',
+    'Comparative Evaluation of Networks Based Anomaly Detection Systems',
+    'Automatic e-Document classification using cluster-based Decision Classifier',
+    'Performance analysis of LDPC based Error Control Techniques for Dynamic Spectrum Allocation in Cognitive Radio Systems',
+    'Channel and route optimization in Wireless Networks',
+    'Detecting Deceptive Behaviour in Cooperative Diversity',
+    'Traffic Engineering with MPLS for QoS Improvement',
+    'Collaborative Spectrum Sensing for Cognitive Radio Networks',
+    'Security Enhancement of UMTS',
+    'Design and Simulation of a Secure File Encryption & Decryption System using Hash functions',
+    'Multi-homing Implementation in MANETS using Fast TCP',
+    'Comparative Analysis of Excitation Structures for Short Backfire Antenna',
+    'Handover Control for Heterogeneous Wireless Access Networks',
+    'Improved Blind Equalization Algorithm by Modified RLS based on Canonical Correlation Analysis',
+    'Radio Access Network Audit and Optimization',
+    'Vulnerability Analysis and Performance Evaluation of a Virtualized Medium-Sized ISP/Data Center',
+    'Performance Analysis of HMAC and MD6 Hash Authentication Algorithms Based on Pre-image Attacks and Collision Resistance',
+    'A Band Width Efficient Application Layer Algorithm for reliable Multimedia Application in Vehicular Ad-Hoc',
+    'Space Time Block Codes for Next Generation WLANs',
+    'Handover Control Parameters for Heterogeneous Wireless Networks',
+    'Delay Optimized Packet Scheduling Algorithm for Improved Quality of Service in 3GPP/LTE Network',
+    'Ensuring Security in IP Multimedia Subsystem for service Quality',
+    'Mac-Aware Dynamic Source Routing Protocol',
+    'Comparative Analysis of UWB antennas for Body Centric Communication',
+    'Wi-Fi Based positioning Algorithm for Indoor Environment Using 802.11',
+    'Energy Efficient Relay Based Clustering for Wireless Sensor Networks',
+    'Autonomous UGV using Microsoft Kinect and SCADA',
+    'Design and Implementation RFID over Wireless'
+  ])) +
+  det('Undergraduate Projects Supervised — During Professorship [8]', li([
+    'Satellite Orbit computation using GPS observables code Pseudoranges',
+    'Library Automation, Inventory and Tracking System of UET Taxila',
+    'Development of network management and bottleneck identification Software using SNMP, JFFNMS, Sitescope and Whatsup Gold',
+    'Enhancing performance of static and mobile wireless using different techniques',
+    'Linux based secure operating system for PDAs',
+    'Design and Implementation of VoIP based exchange',
+    'Wireless Network Planning and Site Survey Software',
+    'Automated CRC Error detection and rectification for PTCL ADSL devices using Terminal services'
+  ])) +
+  det('Final Year Projects & Master’s — During Assistant Professorship [18]', li([
+    '<b>DNFSS</b> – Distributed Network File System Software',
+    '<b>BlueNet</b> – Extending Range of Bluetooth Network using Wi-Fi backbone',
+    '<b>VoIP PBX and Monitor</b> – Asterisk based VoIP PBX at UET Taxila',
+    'Implementation of Secured Ad-hoc On-demand Distance Vector Routing Protocol on OMNeT++',
+    'Development of Fingerprint Recognition based Attendance and Access Control System',
+    'Anomaly Based Intrusion Detection for Wireless Ad hoc Networks',
+    'Wireless Security Audit of WiMAX',
+    'Cognitive ALE for HF Radios',
+    'Video Analytics for Quantitative Employee Performance Evaluation'
+  ]));
+
+// 7. Teaching Population
+$('#teachgrid').innerHTML =
+  '<div class="card rv"><h3>Associate Professor</h3><div class="meta">Telecommunication Engineering · Graduate Level</div>' + li([
+    'Network Management', 'Satellite Networking', 'IP Telephony and Voice over IP', 'Wireless Communication', 'Mobile Communication and Internet Technologies', 'Mobile and Pervasive Computing'
+  ]) + '</div>' +
+  '<div class="card rv"><h3>Assistant Professor</h3><div class="meta">Electrical Engineering · Graduate & Undergraduate</div>' + li([
+    'Software Engineering', 'Computer Fundamentals', 'Operating Systems', 'Advanced Computer Systems', 'Computer Networks', 'Computer Systems Engineering', 'Artificial Intelligence', 'Parallel Processing', 'Advanced Operating Systems', 'Wireless Networks', 'Network Security', 'Satellite Communication'
+  ]) + '</div>';
+
+// 8. Industry Population
+$('#indgrid').innerHTML = [
+  ['National ID Card Project · NADRA', 'Consultancy Services', [
+    'Consultancy services in the National ID Card Project of NADRA',
+    'Consultancy in design of core networking infrastructure for NADRA',
+    'Consultancy in technical specification of National ID Card production technology',
+    'Project management architecture on Primavera Project Planner (P3)'
+  ]],
+  ['Palm OS & PDA Programming', 'Falch.NET · C/C++ IDE', [
+    'Team Lead for Palm Visor device programming',
+    'Team Lead for Palm Pilot IV device programming',
+    'Team Lead for commercial software development through Handango Inc.',
+    '<b>SitePlan</b> Project Management Software for Palm OS 4.x',
+    '<b>PDB Browser</b> for Palm OS 4.x, released as free open-source tool'
+  ]],
+  ['Offshore Software Systems', 'Visual Basic & FoxPro', [
+    'Web Enabled Medical Transcription Software for a US-based firm',
+    'Converted Expert Systems General Ledger (ESGL) from DOS to Windows/FoxPro',
+    'Client-server financial applications with MS SQL and Visual Basic'
+  ]],
+  ['Professional Technical Courses', 'Corporate Training', [
+    'Rapid Software Development using Microsoft Access',
+    'Palm software development using Falch.net',
+    'Primavera Project Planner (P3)',
+    'Astaro Security Linux Firewalls',
+    'Kerio Winroute Firewalls'
+  ]]
+].map(function(e) { return card(e[0], e[1], li(e[2])); }).join('');
+
+// 9. Trainings & Certifications Population
+$('#traingrid').innerHTML = [
+  ['Intel Cluster Training', 'Dubai, UAE', ['Intel High Performance Compute Cluster Training', 'Intel Storage Servers Training']],
+  ['Allied Telesis Core Switching', 'Singapore', ['ATI Blade Switching Technology Training', 'ATI AT-View Management Solution Training']],
+  ['Fluke & Lantek Measurement', 'Singapore', ['Fluke DTX 1800 Series Cable Testers', 'IDEAL LANTek 7G Cable Testers']],
+  ['WatchGuard Firewall Systems', 'Singapore', ['Securing Local Networks using WatchGuard Appliances', 'Connectivity Architecture for Remote Offices']],
+  ['Man & Tel Telecom Equipment', 'Korea', ['RFID/USN Trainer Systems', 'Cellular and Mobile Communication Trainer', 'Ubiquitous Home Networking Trainer']],
+  ['Cisco Certified Academic Instructor', 'Egypt', ['IT Essentials', 'CCNA + Wireless Networks Certification']],
+  ['Huawei Certified Instructor (HCIA)', 'China', ['Huawei Certified ICT Associate (HCIA 5G) · Cert: 10103866062380804269536933', 'Huawei Certified ICT Associate (HCIA IoT) · Cert: 01010190162380805033615816']],
+  ['Qualcomm Academic Instructor', 'USA', ['5G University Program', 'AI for Qualcomm Engineering Courses']]
+].map(function(e) { return card(e[0], e[1], li(e[2])); }).join('');
+
+// 10. Workshops Population
+$('#wsgrid').innerHTML =
+  card('PhD Supervisors Master Trainers Workshop', 'British Council & Coventry University · 05–09 June 2023', '<p class="small" style="margin-top:12px">National capacity building of existing PhD supervisors as Master Trainers for Pakistani universities.</p>') +
+  card('Leadership Training for Deans', 'Glasgow, Scotland · 9–18 August 2016', '<p class="small" style="margin-top:12px">Higher education executive governance, academic restructuring and international curriculum benchmarking.</p>') +
+  card('TEIN4 NOC Annual Workshop', 'AIT, Thailand · 12–16 October 2015', li([
+    'Design, build and monitor scalable and sustainable research and education networks',
+    'Implemented best practices to monitor and manage networks',
+    'Deployed Software Defined Networking (SDN) to understand its potential use in real-world scenarios',
+    'Strengthened the human network of research and education community',
+    'Deployed Ubuntu-based network monitoring and reporting tools'
+  ]) + '<p class="small" style="margin-top:12px"><a href="https://nsrc.org/workshops/2015/nsrc-tein-ait-noc/" target="_blank" rel="noopener">Official Workshop Portal &nearr;</a></p>');
+
+// 11. Awards Population
+$('#awardgrid').innerHTML = [
+  ['Governor’s Shield', 'Development of ERP software at UET Taxila'],
+  ['Excellence Award', 'Talent Work Leading Group · Jinhua CPC, China'],
+  ['Steering Committee Member', 'National Semiconductor HR Development Program'],
+  ['Convener, Technical Committee', 'Higher Education Commission (HEC) IT Division']
+].map(function(a) { return card(a[0], '', '<p class="small" style="margin-top:10px">' + a[1] + '</p>'); }).join('');
+
+// 12. Collaborations Population
+$('#collabgrid').innerHTML = [
+  ['Inovatian Inc. · InoMesh', '<a href="https://www.inovatian.com/product/name/InoMesh" target="_blank" rel="noopener">inovatian.com &nearr;</a>', [
+    'Head of R&D for InoMesh network hardware and firmware development',
+    'Working on a smart device patent for 6G mobile communication networks'
+  ]],
+  ['Wedge Networks Inc.', '<a href="https://www.wedgenetworks.com" target="_blank" rel="noopener">wedgenetworks.com &nearr;</a>', [
+    'R&D on WedgeARP real-time anti-malware solution with the DPI Lab',
+    'Wedge gifted an NDP-0104A device to the DPI Lab for joint R&D'
+  ]],
+  ['PTCL Pakistan', '<a href="https://www.ptcl.com.pk" target="_blank" rel="noopener">ptcl.com.pk &nearr;</a>', [
+    'Signed MoU for development of a Telecom Innovation Center at UET Taxila',
+    '2 EVO/Charjee wireless towers for campus-wide wireless services',
+    'Multiservice Access Gateway installed for Triple Play services',
+    'Complimentary 40/500 Mbps internet bandwidth for UET Taxila',
+    'Special discounted packages for UET Taxila employees'
+  ]],
+  ['PITB National Incubation Centres', '<a href="https://pitb.gov.pk/nep-nics" target="_blank" rel="noopener">pitb.gov.pk &nearr;</a>', [
+    'Focal Person for PITB, coordinating startup incubation at UET Taxila'
+  ]],
+  ['PITB e-Rozgaar Program', '<a href="https://www.erozgaar.pitb.gov.pk" target="_blank" rel="noopener">erozgaar.pitb.gov.pk &nearr;</a>', [
+    'Hosted at the Telecommunication Engineering Department, UET Taxila'
+  ]]
+].map(function(e) { return card(e[0], e[1], li(e[2])); }).join('');
+
+// 13. Initiatives Population
+$('#initgrid').innerHTML = [
+  ['Electric Vehicle for Mass Transport', 'Fusion Rickshaw Project · PTUT Lahore with Pak Star Automobile (Pvt.) Ltd.', '<a href="https://pakstar.org" target="_blank" rel="noopener">pakstar.org &nearr;</a>'],
+  ['Hybrid Electric Motorcycle', 'Bike Project · PTUT Lahore, as BoD member of Pak China Huazi Green Energy (Pvt.) Ltd.', '<a href="https://huaziautos.com/" target="_blank" rel="noopener">huaziautos.com &nearr;</a>'],
+  ['ERP Software · UET Taxila', 'Focal person for institutional development & coordination', '<a href="http://erp.uettaxila.edu.pk" target="_blank" rel="noopener">erp.uettaxila.edu.pk &nearr;</a>'],
+  ['ERP@CLOUD · PTUT Lahore', 'Hosted cloud ERP serving other public sector universities for revenue generation', '<a href="http://erp.ptut.edu.pk" target="_blank" rel="noopener">erp.ptut.edu.pk &nearr;</a>'],
+  ['Google Apps for Education with Cloudflare', 'Registered & implemented for UET Taxila, University of Chakwal and PTUT Lahore', '<a href="http://www.uettaxila.edu.pk" target="_blank" rel="noopener">uettaxila</a> · <a href="http://www.uoc.edu.pk" target="_blank" rel="noopener">uoc</a> · <a href="http://www.ptut.edu.pk" target="_blank" rel="noopener">ptut</a>'],
+  ['ERP@CLOUD on Cloudflare CDN', 'Hosted for Pakistani universities: UET Taxila, University of Chakwal, PTUT Lahore', ''],
+  ['GetSmart · Open Source', 'Download Manager and High-Speed Proxy Software', '<a href="http://getsmart.sourceforge.net/" target="_blank" rel="noopener">SourceForge &nearr;</a> · <a href="https://github.com/adeelakramkhan/GetSmart/" target="_blank" rel="noopener">GitHub &nearr;</a>'],
+  ['Wikipedia Management', 'Institutional verification for UET Taxila and University of Chakwal', '<a href="https://en.wikipedia.org/wiki/University_of_Engineering_and_Technology,_Taxila" target="_blank" rel="noopener">UET Taxila &nearr;</a> · <a href="https://en.wikipedia.org/wiki/University_of_Chakwal" target="_blank" rel="noopener">UoC &nearr;</a>'],
+  ['Deep Packet Inspection Lab', 'Indigenous multi-gigabit DPI engine, sovereign replacement for foreign hardware', '<a href="https://web.uettaxila.edu.pk/dpilab/" target="_blank" rel="noopener">dpilab &nearr;</a>']
+].map(function(e) {
+  return card(e[0], '', '<p class="small" style="margin:10px 0">' + e[1] + '</p><div class="small">' + e[2] + '</div>');
+}).join('');
+
+// 14. Links Population
+$('#links').innerHTML = [
+  ['Google Scholar Citations', 'https://scholar.google.com/citations?user=G2mBXScAAAAJ'],
+  ['PTUT Lahore (Official)', 'http://www.ptut.edu.pk'],
+  ['UET Taxila (Faculty)', 'http://www.uettaxila.edu.pk'],
+  ['Deep Packet Inspection Lab', 'https://web.uettaxila.edu.pk/dpilab/'],
+  ['GitHub Code Repositories', 'https://github.com/adeelakramkhan']
+].map(function(l) {
+  return '<a class="btn g" style="margin:0 10px 10px 0" href="' + l[1] + '" target="_blank" rel="noopener">' + l[0] + ' &nearr;</a>';
+}).join('');
+
+
+/* ---------------- SCROLLCRAFT UI & REVEAL SYSTEM ---------------- */
+var secs = [].slice.call(document.querySelectorAll('section'));
+$('#dots').innerHTML = secs.map(function(s) {
+  return '<a href="#' + s.id + '"><span>' + s.dataset.n + '</span></a>';
+}).join('');
+var dots = [].slice.call(document.querySelectorAll('#dots a'));
+
+// Immediate Hero Cascade & Anticipatory Intersection Reveal
+var rvElements = [].slice.call(document.querySelectorAll('.rv'));
+document.querySelectorAll('#hero .rv').forEach(function(el, idx) {
+  setTimeout(function() { el.classList.add('in'); }, idx * 65);
+});
+
+if ('IntersectionObserver' in window) {
+  var rvObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        rvObserver.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '120px 0px 60px 0px', threshold: 0.01 });
+
+  rvElements.forEach(function(el) {
+    var rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 1.05 && rect.bottom > 0) {
+      el.classList.add('in');
+    } else {
+      rvObserver.observe(el);
+    }
+  });
+} else {
+  rvElements.forEach(function(el) { el.classList.add('in'); });
+}
+
+// Quartic Ease-Out Number Counter Observer
+var co = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (!entry.isIntersecting) return;
+    co.unobserve(entry.target);
+    var v = parseFloat(entry.target.dataset.v);
+    var dec = (String(v).split('.')[1] || '').length;
+    var t0 = performance.now();
+    var duration = 1600;
+    (function f(t) {
+      var k = Math.min(1, (t - t0) / duration);
+      var q = 1 - Math.pow(1 - k, 4);
+      entry.target.textContent = (v * q).toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
+      if (k < 1) requestAnimationFrame(f);
+    })(t0);
+  });
+}, { rootMargin: '60px 0px', threshold: 0.05 });
+document.querySelectorAll('.cnt').forEach(function(e) { co.observe(e); });
+
+// Scroll Progress & HUD Chapter Tracker
+function onScroll() {
+  var h = document.documentElement.scrollHeight - window.innerHeight;
+  var progress = h > 0 ? window.scrollY / h : 0;
+  $('#bar').style.width = (progress * 100) + '%';
+
+  var cur = 0;
+  var mid = window.innerHeight * 0.45;
+  secs.forEach(function(s, i) {
+    var top = s.getBoundingClientRect().top;
+    if (top < mid) cur = i;
+  });
+
+  dots.forEach(function(d, i) { d.classList.toggle('on', i === cur); });
+  var curSec = secs[cur];
+  var nStr = String(cur + 1).padStart(2, '0');
+  $('#chap').textContent = nStr + ' · ' + curSec.dataset.n;
+  var ac = getComputedStyle(curSec).getPropertyValue('--ac').trim() || '#B88E28';
+  document.documentElement.style.setProperty('--ac', ac);
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+// 3D Tilt for Hero Portrait
+var heroFrame = document.getElementById('frame');
+window.addEventListener('mousemove', function(e) {
+  if (!heroFrame || window.innerWidth < 900) return;
+  var mx = (e.clientX / window.innerWidth) * 2 - 1;
+  var my = (e.clientY / window.innerHeight) * 2 - 1;
+  heroFrame.style.transform = 'rotateY(' + (mx * 7) + 'deg) rotateX(' + (-my * 5) + 'deg)';
+}, { passive: true });
+
+
+/* ---------------- LABORATORY DPI SPECTRUM & PROTOCOL ANALYZER (SIGNATURE MOVE) ---------------- */
+(function() {
+  var canvas = document.getElementById('dpi-canvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var ctrlTp = document.getElementById('synth-tp');
+  var ctrlFilter = document.getElementById('synth-filter');
+  var ctrlBand = document.getElementById('synth-band');
+  var ctrlLat = document.getElementById('synth-lat');
+  var bandButtons = document.querySelectorAll('.dpi-band-btn');
+
+  var bands = [
+    { name: '800 MHz LTE / Sub-1GHz', filter: 'BGP Routing / DNS AS-Path', baseTp: 18.4, freq: 0.015, amp: 24, lat: 2.15 },
+    { name: '2.4 GHz ISM / WiFi-6', filter: 'OFDM Multi-Carrier / QUIC Streams', baseTp: 42.6, freq: 0.025, amp: 20, lat: 1.64 },
+    { name: '5.8 GHz Carrier / C-Band', filter: 'TLS 1.3 State Tracking', baseTp: 78.4, freq: 0.038, amp: 26, lat: 1.18 },
+    { name: '28 GHz mmWave / 5G-6G', filter: 'L7 Deep Packet Payload Heuristics', baseTp: 98.6, freq: 0.062, amp: 32, lat: 0.84 }
+  ];
+
+  var activeBandIdx = 2; // Default 5.8 GHz
+  var time = 0;
+  var mouseX = -1, mouseY = -1;
+  var isHovered = false;
+
+  bandButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      bandButtons.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      activeBandIdx = parseInt(btn.dataset.band, 10);
+    });
+  });
+
+  canvas.addEventListener('mousemove', function(e) {
+    var r = canvas.getBoundingClientRect();
+    mouseX = (e.clientX - r.left) * (canvas.width / r.width);
+    mouseY = (e.clientY - r.top) * (canvas.height / r.height);
+    isHovered = true;
+  });
+  canvas.addEventListener('mouseleave', function() {
+    isHovered = false;
+    mouseX = -1;
+  });
+
+  function renderSpectrum() {
+    time += 0.032;
+    var w = canvas.width;
+    var h = canvas.height;
+    var cfg = bands[activeBandIdx];
+
+    // Readout Fluctuation
+    var liveTp = (cfg.baseTp + Math.sin(time * 3) * 1.8 + (isHovered ? 4.2 : 0)).toFixed(1);
+    var liveLat = (cfg.lat + Math.sin(time * 2) * 0.05).toFixed(2);
+    if (ctrlTp) ctrlTp.textContent = liveTp + ' Gbps';
+    if (ctrlFilter) ctrlFilter.textContent = cfg.filter;
+    if (ctrlBand) ctrlBand.textContent = cfg.name;
+    if (ctrlLat) ctrlLat.textContent = liveLat + ' µs';
+
+    // Dark Phosphor CRT Clear
+    ctx.fillStyle = 'rgba(3, 10, 20, 0.42)';
+    ctx.fillRect(0, 0, w, h);
+
+    // Laboratory Graticule Grid Lines & Decibel Markings
+    ctx.strokeStyle = 'rgba(14, 124, 124, 0.16)';
+    ctx.lineWidth = 1;
+    ctx.font = '9px "JetBrains Mono", monospace';
+    ctx.fillStyle = 'rgba(143, 162, 188, 0.4)';
+
+    // Vertical Frequency Graticule
+    for (var x = 0; x < w; x += 60) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+      if (x > 0 && x < w - 40) ctx.fillText((x / 80).toFixed(1) + ' GHz', x + 4, h - 8);
+    }
+    // Horizontal dBm Graticule
+    var dbVals = ['+20 dBm', '+0 dBm', '-20 dBm', '-40 dBm', '-60 dBm'];
+    for (var y = 0, idx = 0; y < h; y += 44, idx++) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+      if (idx < dbVals.length) ctx.fillText(dbVals[idx], 8, y + 12);
+    }
+
+    var midY = h * 0.52;
+
+    // Baseline Noise Floor
+    ctx.strokeStyle = 'rgba(184, 142, 40, 0.35)';
+    ctx.lineWidth = 1.2;
+    ctx.beginPath();
+    for (var i = 0; i < w; i += 2) {
+      var nFloor = midY + Math.sin(i * 0.015 + time) * 12 + Math.cos(i * 0.04 - time * 0.8) * 8;
+      if (i === 0) ctx.moveTo(i, nFloor); else ctx.lineTo(i, nFloor);
+    }
+    ctx.stroke();
+
+    // Primary High-Speed DPI Phosphor Carrier (Cyan vector trace)
+    ctx.strokeStyle = '#00E5FF';
+    ctx.lineWidth = 2.2;
+    ctx.shadowColor = '#00E5FF';
+    ctx.shadowBlur = 8;
+    ctx.beginPath();
+
+    for (var j = 0; j < w; j++) {
+      var burst = (Math.sin((j + time * 60) * 0.04) > 0.82) ? (Math.sin(j * 0.2) * 22) : 0;
+      var mouseDisturbance = (isHovered && Math.abs(j - mouseX) < 80) ? (Math.sin((j - mouseX) * 0.15) * 16) : 0;
+      var y2 = midY + Math.sin(j * cfg.freq - time * 2.2) * cfg.amp + burst + mouseDisturbance;
+      if (j === 0) ctx.moveTo(j, y2); else ctx.lineTo(j, y2);
+    }
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+
+    // Inspection Crosshair Reticle & Payload Readout
+    if (isHovered && mouseX >= 0) {
+      ctx.strokeStyle = 'rgba(184, 142, 40, 0.75)';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([4, 4]);
+      // Vertical crosshair
+      ctx.beginPath(); ctx.moveTo(mouseX, 0); ctx.lineTo(mouseX, h); ctx.stroke();
+      // Horizontal crosshair
+      ctx.beginPath(); ctx.moveTo(0, mouseY); ctx.lineTo(w, mouseY); ctx.stroke();
+      ctx.setLineDash([]);
+
+      // Tooltip marker
+      ctx.fillStyle = '#B88E28';
+      ctx.beginPath(); ctx.arc(mouseX, mouseY, 4, 0, Math.PI * 2); ctx.fill();
+
+      // Tooltip text
+      ctx.fillStyle = '#FFFFFF';
+      ctx.font = '10px "JetBrains Mono", monospace';
+      ctx.fillText('INSPECT: ' + (mouseX * 0.035).toFixed(2) + ' GHz | SNR 38.4 dB | L7 PAYLOAD MATCH', Math.min(w - 290, mouseX + 10), Math.max(24, mouseY - 10));
+    }
+
+    requestAnimationFrame(renderSpectrum);
+  }
+  renderSpectrum();
+})();
+
+
+/* ---------------- INTERACTIVE EXECUTIVE COLLABORATION DOSSIER ---------------- */
+(function() {
+  var dossierTabs = document.querySelectorAll('.dossier-tab');
+  var dosCat = document.getElementById('dos-cat');
+  var dosTitle = document.getElementById('dos-title');
+  var dosDesc = document.getElementById('dos-desc');
+  var dosSpecs = document.getElementById('dos-specs');
+  var dosBtn = document.getElementById('dos-btn');
+
+  var dossiers = [
+    {
+      cat: 'Academic Research Inquiry',
+      title: "Doctoral & Master's Research Supervision",
+      desc: 'Formal supervision for researchers proposing dissertations in 6G wireless mesh architectures, deep packet inspection heuristics, emergency post-disaster IoT networks, or cognitive radio spectrum optimization.',
+      specs: [
+        '<b>Primary Office:</b> Department of Telecommunication Engineering, UET Taxila',
+        '<b>Required Documentation:</b> Research proposal summary (max 4 pages), academic CV, verified transcript copies',
+        '<b>Review Protocol:</b> Formal academic evaluation within 7 to 10 working days'
+      ],
+      subject: '[PhD Research Proposal] - Dr. Adeel Akram',
+      body: 'Dear Dr. Adeel Akram,%0D%0A%0D%0AI am writing to formally propose a doctoral research trajectory under your supervision.%0D%0A%0D%0AProposed Research Area:%20%0D%0APrevious Academic Institution:%20%0D%0APublication Background:%20%0D%0A%0D%0ARespectfully,%0D%0A'
+    },
+    {
+      cat: 'Sovereign Laboratory Partnership',
+      title: 'Sovereign Telecom & DPI Lab Technology Transfer',
+      desc: 'Collaborative development, real-time threat intelligence benchmarking, and sovereign network hardware deployment utilizing the multi-gigabit Deep Packet Inspection engine.',
+      specs: [
+        '<b>Primary Facility:</b> Deep Packet Inspection Research Lab, UET Taxila',
+        '<b>Target Collaborators:</b> National telecommunication operators, defense agencies, and enterprise network vendors',
+        '<b>Engagement Model:</b> Technology licensing, joint hardware R&D, and Sandvine sovereign replacement'
+      ],
+      subject: '[DPI Lab R&D Inquiry] - Institutional Collaboration',
+      body: 'Dear Dr. Adeel Akram,%0D%0A%0D%0AOur organization is interested in exploring joint R&D and deployment synergies with the Deep Packet Inspection Lab.%0D%0A%0D%0AOrganization Name:%20%0D%0AOperational Scope:%20%0D%0ATarget Throughput / Architecture:%20%0D%0A%0D%0ASincerely,%0D%0A'
+    },
+    {
+      cat: 'Applied Engineering & Mobility',
+      title: 'EV Mass Transit & Green Mobility Joint Ventures',
+      desc: 'Industry-academic partnerships focused on mass-transit electrification, high-efficiency battery packs, and electric two-wheeler / three-wheeler manufacturing.',
+      specs: [
+        '<b>Operational Units:</b> PTUT Lahore & Pak China Huazi Green Energy / Pak Star Automobile JV',
+        '<b>Active Projects:</b> Fusion Electric Rickshaw for mass transit and Hybrid Electric Motorcycle development',
+        '<b>Scope:</b> Commercial localization, powertrain testing, and municipal fleet deployment'
+      ],
+      subject: '[EV Mobility Collaboration] - Commercial & Technical Inquiry',
+      body: 'Dear Vice Chancellor Dr. Adeel Akram,%0D%0A%0D%0AWe are reaching out to discuss electric mobility and green energy technology collaboration with PTUT Lahore.%0D%0A%0D%0ACompany / Entity:%20%0D%0ACollaboration Domain:%20%0D%0AProposed Pilot Scale:%20%0D%0A%0D%0ABest regards,%0D%0A'
+    },
+    {
+      cat: 'Higher Education Governance',
+      title: 'University Administration & Strategic Linkages',
+      desc: 'Inter-university consortia, international academic MoUs, Cloud ERP deployment for public sector universities, and HEC technical advisory.',
+      specs: [
+        '<b>Primary Office:</b> Office of the Vice Chancellor, PTUT Lahore',
+        '<b>Active Deployments:</b> ERP@CLOUD serving multiple provincial universities and Google Cloudflare deployments',
+        '<b>Administrative Scope:</b> Institutional accreditation, dual-degree partnerships, and academic capacity building'
+      ],
+      subject: '[Institutional Linkage] - Office of the Vice Chancellor',
+      body: 'Dear Vice Chancellor Prof. Dr. Adeel Akram,%0D%0A%0D%0AI am writing on behalf of our university / institution to propose a strategic academic linkage.%0D%0A%0D%0AInstitution:%20%0D%0APartnership Nature:%20%0D%0AScheduled Discussion Request:%20%0D%0A%0D%0AWarm regards,%0D%0A'
+    }
+  ];
+
+  dossierTabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      dossierTabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var d = dossiers[parseInt(tab.dataset.type, 10)];
+      if (dosCat) dosCat.textContent = d.cat;
+      if (dosTitle) dosTitle.textContent = d.title;
+      if (dosDesc) dosDesc.textContent = d.desc;
+      if (dosSpecs) {
+        dosSpecs.innerHTML = d.specs.map(function(s) { return '<div>' + s + '</div>'; }).join('');
+      }
+      if (dosBtn) {
+        dosBtn.href = 'mailto:adeel.akram@uettaxila.edu.pk?subject=' + d.subject + '&body=' + d.body;
+      }
+    });
+  });
+})();
+
+
+/* ---------------- AMBIENT SIGNAL CONSTELLATION CANVAS ---------------- */
+(function() {
+  var cv = document.getElementById('gl');
+  if (!cv) return;
+  var ctx = cv.getContext('2d');
+  var w, h;
+  var nodes = [];
+  var nodeCount = window.innerWidth < 900 ? 30 : 65;
+
+  function resize() {
+    w = cv.width = window.innerWidth;
+    h = cv.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resize, { passive: true });
+  resize();
+
+  for (var i = 0; i < nodeCount; i++) {
+    nodes.push({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      vx: (Math.random() - 0.5) * 0.45,
+      vy: (Math.random() - 0.5) * 0.45,
+      r: 1.5 + Math.random() * 2
+    });
+  }
+
+  function drawConstellation() {
+    ctx.clearRect(0, 0, w, h);
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i];
+      n.x += n.vx;
+      n.y += n.vy;
+
+      if (n.x < 0) n.x = w;
+      if (n.x > w) n.x = 0;
+      if (n.y < 0) n.y = h;
+      if (n.y > h) n.y = 0;
+
+      ctx.fillStyle = 'rgba(184, 142, 40, 0.45)';
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fill();
+
+      for (var j = i + 1; j < nodes.length; j++) {
+        var n2 = nodes[j];
+        var dx = n.x - n2.x;
+        var dy = n.y - n2.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 130) {
+          ctx.strokeStyle = 'rgba(14, 124, 124, ' + (0.16 * (1 - dist / 130)) + ')';
+          ctx.lineWidth = 0.8;
+          ctx.beginPath();
+          ctx.moveTo(n.x, n.y);
+          ctx.lineTo(n2.x, n2.y);
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(drawConstellation);
+  }
+  drawConstellation();
+})();
+</script>
+
+</body>
+</html>
